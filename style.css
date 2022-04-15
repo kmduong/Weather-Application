@@ -1,0 +1,289 @@
+body{
+  background-color: #eee;
+}
+
+.container{
+  height: 600px;
+  margin:15vh auto;
+  border-radius: 25px;
+  background-color: #9FFFFF;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3)
+}
+
+#celcius, #farenheit {
+  border: none;
+  background-color: inherit;
+  padding: 12px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+}
+
+#celcius:hover, #farenheit:hover {
+	color: grey;
+}
+
+
+.header {
+  height: 10%;
+  background-color: #000080;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+  position:relative;
+}
+
+#temp, #humidity, #wind {
+  font-family: "Consolas";
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#humidity, #wind{
+	font-size: 20px;
+	-webkit-transform: translate(-50%, -75%);
+		    transform: translate(-50%, -75%);
+}
+
+.city-spot {
+  position:absolute;
+  left: 25%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#city-name {
+  font-family: "Consolas";
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#weather-condition {
+  font-family: "Consolas";
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#icon {
+  width:50%;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.city {
+  height: 40%;
+  width: 50%;
+  background-color: #B399DD;
+}
+
+.temperature {
+  position: absolute;
+  left: 50%;
+  top:0%;
+  height: 27.5%;
+  width: 50%;
+  background-color: #B399DD;
+}
+
+.others {
+  height: 12.5%;
+  width: 50%;
+  position:absolute;
+  left:50%;
+  top:27.5%;
+  background-color: #B399DD;
+}
+
+.forecast5D1 {
+  height: 15%;
+  width: 20%;
+  position:relative;
+  float: left;
+  background-color: #00FA9A;
+  font-family: "Consolas";
+  Font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.forecast5D2 {
+  height: 15%;
+  width: 20%;
+  position:relative;
+  float:left;
+  background-color: #00e68e;
+  font-family: "Consolas";
+  Font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.forecast5D3 {
+  height: 15%;
+  width: 20%;
+  position:relative;
+  float:left;
+  background-color: #00cc7e;
+  font-family: "Consolas";
+  Font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.forecast5D4 {
+  height: 15%;
+  width: 20%;
+  position:relative;
+  float:left;
+  background-color: #00b36e;
+  font-family: "Consolas";
+  Font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.forecast5D5 {
+  height: 15%;
+  width: 20%;
+  position:relative;
+  float:left;
+  background-color: #00995e;
+  font-family: "Consolas";
+  Font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.hourly {
+  height: 30%;
+  width: 100%;
+  position:relative;
+  float:left;
+  background-color: #9FFFFF;
+  font-family: "Consolas";
+  Font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+#chart {
+	height: 105%; 
+	width: 100%;
+}
+
+#submit {
+  width: 40px;
+  height:40px;
+  color: #eee;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  padding: 6px;
+  background: #2196F3;
+}
+
+#submit:hover {
+  background: #0b7dda;
+}
+
+
+#search-text {
+  color: #000800;
+  height:30px;
+  border-radius: 10px;
+  border-style:none;
+  outline:none;
+  padding-right:1px;
+  padding-left:1px;
+  text-align:center;
+}
+  @media (min-width: 1024px) {
+  .container {
+    width : 800px
+  }
+  }
+  
+  @media (max-width: 1024px) {
+  .container {
+    width : 700px
+  }
+  }
+
+  @media (max-width: 920px) {
+  .container {
+    width : 600px
+  }
+  }
+  
+@media (max-width: 768px) {
+  .container {
+    width : 70%
+  }
+  .header {
+	height : 13%
+  }
+  #search-text {
+	  width: 72%;
+  }
+  .city {
+	 height: 35%
+  }
+  .temperature{
+	 height: 22.5%
+  }
+  .others{
+	 top: 22.5%
+  }
+  .city-spot{
+	 top: 15%
+  }
+  #city-name {
+  font-size: 30px;
+
+  }
+  }
+  
+ 
+  
+  
+
+
+
+  
+.search {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  -webkit-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Application</title>
+  <meta name="Kevin Duong" content="Javscript, HTML">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+  <header class="header">
+    <div class="search">
+      <input type="text" placeholder="Enter City Name" id="search-text">
+      <a id="submit" href="#"><i class="fa fa-search"></i></a>
+	  <button id="celcius">C</button>
+	  <button id="farenheit">F</button>
+    </div>
+  </header>
+
+  <main id="main">
+    
+    <div class="city">
+      <div class="city-spot">
+      <div id="city-name"></div>
+      <img src="" alt="" id="icon">
+	  <div id="weather-condition" ></div>
+        </div>
+    </div>
+    
+    <div class="temperature">
+      <div id="temp"></div>
+    </div>
+    
+    <div class="others">
+      <div id="humidity"></div>
+	  <div id="wind"></div>
+    </div>
+    
+	<div class="forecast5D1">
+		<div id="dayf1"></div>
+		<img src="" alt="" id="iconf1">
+		<div id="tempf1"></div>
+	</div>
+	
+	<div class="forecast5D2">
+		<div id="dayf2"></div>
+		<img src="" alt="" id="iconf2">
+		<div id="tempf2"></div>
+	</div>
+	
+	<div class="forecast5D3">
+		<div id="dayf3"></div>
+		<img src="" alt="" id="iconf3">
+		<div id="tempf3"></div>
+	</div>
+	
+	<div class="forecast5D4">
+		<div id="dayf4"></div>
+		<img src="" alt="" id="iconf4">
+		<div id="tempf4"></div>
+	</div>
+	
+	<div class="forecast5D5">
+		<div id="dayf5"></div>
+		<img src="" alt="" id="iconf5">
+		<div id="tempf5"></div>
+	</div>
+	
+	<div class="hourly">
+		<div id="chart"></div>
+	</div>
+  </main>
+ 
+</div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script  src="index.js"></script>
+</body>
+
+</html>
